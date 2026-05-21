@@ -1,0 +1,29 @@
+name: htr
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - setuptools
+  - wheel
+  - pytorch=1.13.0
+  - torchvision=0.14.0
+  - torchaudio=0.13.0
+  - pytorch-cuda=11.6
+  - pip:
+      - absl-py==2.1.0
+      - editdistance==0.8.1
+      - timm==1.0.9
+      - opencv-python-headless>=4.5.0 
+      - scikit-image==0.21.0
+      - tensorboard==2.14.0
+      - wandb==0.16.6
+      - pillow==10.3.0
+      - pyyaml==6.0.1
+      - tqdm==4.65.2
+      - torchsummary==1.5.1
+      - scipy==1.10.1
+      - matplotlib==3.7.5
+      - requests==2.31.0
