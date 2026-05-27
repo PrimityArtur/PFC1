@@ -1,5 +1,7 @@
 output/
 iam/
+iam_words/
+
 
 __pycache__/
 *.py[cod]

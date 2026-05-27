@@ -50,19 +50,14 @@ def main():
     
     # fija la semilla de aleatoriedad global (123) para que, si vuelves a correr el codigo, las imagenes se desordenen y alteren igual y sea reproducible
     torch.manual_seed(args.seed)
-
     # crea la ruta final sumando el directorio de salida (output) y el nombre del experimento (iam) para que sepa donde guardar
-    args.save_dir = os.path.join(args.out_dir, args.exp_name)
-    
+    args.save_dir = os.path.join(args.out_dir, args.exp_name)    
     # crea la carpeta fisicamente en el disco duro usando makedirs para que no de error al intentar guardar los primeros archivos
     os.makedirs(args.save_dir, exist_ok=True)
-
     # instancia el sistema de registro logger para que empiece a registrar los procesos en el archivo run.log
-    logger = utils.get_logger(args.save_dir)
-    
+    logger = utils.get_logger(args.save_dir)    
     # imprimen todos los argumentos de consola en formato JSON para que quede un registro de como se configuro el experimento
-    logger.info(json.dumps(vars(args), indent=4, sort_keys=True))
-    
+    logger.info(json.dumps(vars(args), indent=4, sort_keys=True))    
     # inicia TensorBoard (SummaryWriter) para que empiece a grabar los numeros y luego ver las graficas del entrenamiento 
     writer = SummaryWriter(args.save_dir)
 
@@ -102,8 +97,7 @@ def main():
 
     logger.info('Loading val loader...')
     # carga la lista de validacion para que el modelo evalue con datos que no uso para entenar
-    val_dataset = dataset.myLoadDS(args.val_data_list, args.data_path, args.img_size, ralph=train_dataset.ralph)
-    
+    val_dataset = dataset.myLoadDS(args.val_data_list, args.data_path, args.img_size, ralph=train_dataset.ralph)    
     # crea el DataLoader de validacion sin deformaciones (shuffle=False y sin collate_fn) para que la evaluacion sea estandar
     val_loader = torch.utils.data.DataLoader(val_dataset,
                                              batch_size=args.val_bs,
@@ -112,14 +106,12 @@ def main():
                                              num_workers=args.num_workers)
 
     # inicializa el optimizador SAM envolviendo al AdamW para que las actualizaciones busquen valles de error
-    optimizer = sam.SAM(model.parameters(), torch.optim.AdamW, lr=1e-7, betas=(0.9, 0.99), weight_decay=args.weight_decay)
-    
+    optimizer = sam.SAM(model.parameters(), torch.optim.AdamW, lr=1e-7, betas=(0.9, 0.99), weight_decay=args.weight_decay)    
     # declara la funcion de error CTCLoss para que mida que tan mala es la alineacion de los caracteres
     criterion = torch.nn.CTCLoss(reduction='none', zero_infinity=True)
     
     # inicia el traductor CTCLabelConverter para que convierta las letras "a,b,c" a numeros "1,2,3" y la funcion CTC pueda procesarlas
     converter = utils.CTCLabelConverter(train_dataset.ralph.values())
-
     # establecen las mejores puntuaciones iniciales (best_cer y best_wer) en un millon para que cualquier resultado de la primera prueba pase el record y se guarde
     best_cer, best_wer = 1e+6, 1e+6
     train_loss = 0.0
@@ -135,7 +127,7 @@ def main():
         # limpian los gradientes del optimizador para que los calculos matematicos del paso anterior no contaminen este paso
         optimizer.zero_grad()
         
-        # extrae un nuevo bloque de imagenes deformadas y sus textos (batch) llamando a 'next' para que la red procese material fresco
+        # extrae un nuevo bloque de imagenes deformadas y sus textos (batch) llamando a 'next' para que la red procese
         batch = next(train_iter)
         
         # mandan las imagenes a la GPU para que se procesen rapido
@@ -146,20 +138,16 @@ def main():
         batch_size = image.size(0)
         
         # forward se calcula el error ejecutando la red para que el sistema sepa como esta rindiendo
-        loss = compute_loss(args, model, image, batch_size, criterion, text, length)
-        
+        loss = compute_loss(args, model, image, batch_size, criterion, text, length)        
         # backward se viaja hacia atras por la red neuronal calculando la derivada de los pesos para que el optimizador sepa hacia donde esta el pico del error.
-        loss.backward()
-        
+        loss.backward()        
         # SAM. El optimizador SAM empuja los pesos intencionalmente hacia el pico del error para que la red evalue el peor escenario local
         optimizer.first_step(zero_grad=True)
         
         # forward. Se vuelve a pasar la misma imagen y calcular el error estando en el pico de la alto para que la red mida la pendiente
-        compute_loss(args, model, image, batch_size, criterion, text, length).backward()
-        
+        compute_loss(args, model, image, batch_size, criterion, text, length).backward()        
         # SAM regresa a la posicion original y usa la informacion del pico bajo para dar un paso seguro lejos del error, actualizando los pesos
-        optimizer.second_step(zero_grad=True)
-        
+        optimizer.second_step(zero_grad=True)        
         # Se vuelve a limpiar la red entera para que el proximo lote no herede las matematicas de este.
         model.zero_grad()
         

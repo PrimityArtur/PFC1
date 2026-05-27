@@ -22,7 +22,7 @@ def get_args_parser():
     # para que el bucle de entrenamiento sepa cada cuantos pasos debe detenerse temporalmente para evaluar el modelo y guardar su progreso
     parser.add_argument('--eval-iter', default=1000, type=int, help='nb of iterations to run evaluation')
     
-    # para que el sistema sepa cual es el limite maximo de pasos matematicos antes de dar por terminado todo el entrenamiento
+    # para que el sistema sepa cual es el limite maximo de pasos antes de dar por terminado todo el entrenamiento
     parser.add_argument('--total-iter', default=100000, type=int, help='nb of total iterations for training')
     
     # para que el optimizador sepa durante cuantas iteraciones debe mantener una velocidad de aprendizaje baja, evitando que la red colapse al principio
@@ -34,7 +34,7 @@ def get_args_parser():
     # (Learning Rate) para que el optimizador sepa cual es el tamaño maximo de los "pasos" que puede dar al actualizar los pesos de las neuronas
     parser.add_argument('--max-lr', default=1e-3, type=float, help='learning rate')
     
-    # para que actue como un castigo matematico sobre los pesos muy grandes, forzando a la red a mantenerse simple y evitar memorizar los datos (sobreajuste)
+    # para que actue como el castigo matematico sobre los pesos muy grandes, forzando a la red a mantenerse simple y evitar memorizar los datos (sobreajuste)
     parser.add_argument('--weight-decay', default=5e-1, type=float, help='weight decay')
     
     # booleano para que el script decida si enviar los graficos de progreso a la plataforma online Weights & Biases o usar TensorBoard localmente
@@ -116,7 +116,7 @@ def get_args_parser():
     # para que la red "Sombra" sepa con que factor matematico debe actualizar y suavizar sus pesos basandose en la red principal
     parser.add_argument('--ema-decay', default=0.9999, type=float, help='Exponential Moving Average (EMA) decay')
     
-    # para que si se usa una funcion de perdida secundaria (como KLD), sepa que tanto peso darle respecto a la perdida CTC principal
+    # para que si se usa una funcion de perdida secundaria (KLD), sepa que tanto peso darle respecto a la perdida CTC principal
     parser.add_argument('--alpha', default=0, type=float, help='kld loss ratio')
 
 
@@ -140,6 +140,16 @@ def get_args_parser():
     
     # 80 para que la ultima capa del modelo se construya con exactamente 80 neuronas de salida (79 caracteres del alfabeto IAM + 1 token blanco de CTC).
     IAM.add_argument('--nb-cls', default=80, type=int, help='nb of classes, IAM=79+1, READ2016=89+1')
+
+
+
+
+
+
+
+
+
+
 
     # CONFIGURACION PARA READ2016 
     READ = subparsers.add_parser("READ",
