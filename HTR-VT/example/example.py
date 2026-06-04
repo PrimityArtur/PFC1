@@ -41,7 +41,7 @@ def main():
     parser.add_argument('--nb_cls', type=int, default=90)
     parser.add_argument('--img-size', default=[512, 64], type=int, nargs='+')
     parser.add_argument('--data_path', type=str, default='../data/iam/lines/')
-    parser.add_argument('--pth_path', type=str, default='../data/iam/best_CER.pth')
+    parser.add_argument('--pth_path', type=str, default='../output/iam/best_CER.pth')
     parser.add_argument('--train_data_list', type=str, default='../data/iam/train.ln')
     parser.add_argument('--seed', type=int, default=1234)
     # Ruta por defecto de la imagen que se quiere probar

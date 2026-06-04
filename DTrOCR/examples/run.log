@@ -14,3 +14,89 @@
 2026-05-27 04:29:13,550 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_6.pth
 2026-05-27 04:51:21,743 - INFO - Epoch: 7/50 | Train Loss: 0.5394 | Train Acc: 0.8787 | Val Loss: 2.2485 | Val Acc: 0.7003
 2026-05-27 04:51:22,681 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_7.pth
+2026-05-27 05:13:05,316 - INFO - Epoch: 8/50 | Train Loss: 0.3283 | Train Acc: 0.9272 | Val Loss: 2.4064 | Val Acc: 0.6918
+2026-05-27 05:13:06,226 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_8.pth
+2026-05-27 05:34:32,407 - INFO - Epoch: 9/50 | Train Loss: 0.2001 | Train Acc: 0.9557 | Val Loss: 2.4300 | Val Acc: 0.6970
+2026-05-27 05:34:33,213 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_9.pth
+2026-05-27 05:56:01,849 - INFO - Epoch: 10/50 | Train Loss: 0.1452 | Train Acc: 0.9666 | Val Loss: 2.6249 | Val Acc: 0.6895
+2026-05-27 05:56:02,596 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_10.pth
+2026-05-27 06:17:26,266 - INFO - Epoch: 11/50 | Train Loss: 0.1203 | Train Acc: 0.9714 | Val Loss: 2.5858 | Val Acc: 0.6927
+2026-05-27 06:17:27,061 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_11.pth
+2026-05-27 06:38:48,122 - INFO - Epoch: 12/50 | Train Loss: 0.1025 | Train Acc: 0.9750 | Val Loss: 2.6309 | Val Acc: 0.6909
+2026-05-27 06:38:48,929 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_12.pth
+2026-05-27 07:00:11,422 - INFO - Epoch: 13/50 | Train Loss: 0.0914 | Train Acc: 0.9779 | Val Loss: 2.6335 | Val Acc: 0.6967
+2026-05-27 07:00:12,201 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_13.pth
+2026-05-27 07:21:32,185 - INFO - Epoch: 14/50 | Train Loss: 0.0814 | Train Acc: 0.9800 | Val Loss: 2.7150 | Val Acc: 0.6965
+2026-05-27 07:21:32,937 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_14.pth
+2026-05-27 07:42:51,006 - INFO - Epoch: 15/50 | Train Loss: 0.0764 | Train Acc: 0.9807 | Val Loss: 2.7028 | Val Acc: 0.6930
+2026-05-27 07:42:51,771 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_15.pth
+2026-05-27 08:04:10,095 - INFO - Epoch: 16/50 | Train Loss: 0.0693 | Train Acc: 0.9821 | Val Loss: 2.7059 | Val Acc: 0.6952
+2026-05-27 08:04:10,894 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_16.pth
+2026-05-27 08:25:29,931 - INFO - Epoch: 17/50 | Train Loss: 0.0639 | Train Acc: 0.9833 | Val Loss: 2.7847 | Val Acc: 0.6903
+2026-05-27 08:25:30,714 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_17.pth
+2026-05-27 08:46:49,053 - INFO - Epoch: 18/50 | Train Loss: 0.0596 | Train Acc: 0.9846 | Val Loss: 2.7783 | Val Acc: 0.6988
+2026-05-27 08:46:49,868 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_18.pth
+2026-05-27 09:08:08,613 - INFO - Epoch: 19/50 | Train Loss: 0.0588 | Train Acc: 0.9844 | Val Loss: 2.7429 | Val Acc: 0.6940
+2026-05-27 09:08:09,494 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_19.pth
+2026-05-27 09:29:28,445 - INFO - Epoch: 20/50 | Train Loss: 0.0540 | Train Acc: 0.9854 | Val Loss: 2.8498 | Val Acc: 0.6957
+2026-05-27 09:29:29,221 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_20.pth
+2026-05-27 09:50:50,123 - INFO - Epoch: 21/50 | Train Loss: 0.0503 | Train Acc: 0.9869 | Val Loss: 2.8185 | Val Acc: 0.6979
+2026-05-27 09:50:51,008 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_21.pth
+2026-05-27 10:12:10,863 - INFO - Epoch: 22/50 | Train Loss: 0.0471 | Train Acc: 0.9877 | Val Loss: 2.8961 | Val Acc: 0.6831
+2026-05-27 10:12:11,725 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_22.pth
+2026-05-27 10:33:31,492 - INFO - Epoch: 23/50 | Train Loss: 0.0473 | Train Acc: 0.9876 | Val Loss: 2.9045 | Val Acc: 0.6923
+2026-05-27 10:33:32,345 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_23.pth
+2026-05-27 10:54:54,051 - INFO - Epoch: 24/50 | Train Loss: 0.0446 | Train Acc: 0.9877 | Val Loss: 2.8138 | Val Acc: 0.6945
+2026-05-27 10:54:54,859 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_24.pth
+2026-05-27 11:16:19,067 - INFO - Epoch: 25/50 | Train Loss: 0.0410 | Train Acc: 0.9885 | Val Loss: 2.9246 | Val Acc: 0.6879
+2026-05-27 11:16:19,874 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_25.pth
+2026-05-27 11:37:52,254 - INFO - Epoch: 26/50 | Train Loss: 0.0402 | Train Acc: 0.9887 | Val Loss: 2.8704 | Val Acc: 0.6945
+2026-05-27 11:37:53,188 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_26.pth
+2026-05-27 11:59:24,898 - INFO - Epoch: 27/50 | Train Loss: 0.0383 | Train Acc: 0.9898 | Val Loss: 2.9647 | Val Acc: 0.6955
+2026-05-27 11:59:25,709 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_27.pth
+2026-05-27 12:21:04,306 - INFO - Epoch: 28/50 | Train Loss: 0.0341 | Train Acc: 0.9909 | Val Loss: 2.9484 | Val Acc: 0.6951
+2026-05-27 12:21:05,117 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_28.pth
+2026-05-27 12:43:07,238 - INFO - Epoch: 29/50 | Train Loss: 0.0350 | Train Acc: 0.9905 | Val Loss: 2.9721 | Val Acc: 0.6946
+2026-05-27 12:43:08,290 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_29.pth
+2026-05-27 13:04:42,366 - INFO - Epoch: 30/50 | Train Loss: 0.0338 | Train Acc: 0.9907 | Val Loss: 2.9902 | Val Acc: 0.6890
+2026-05-27 13:04:43,133 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_30.pth
+2026-05-27 13:27:39,315 - INFO - Epoch: 31/50 | Train Loss: 0.0329 | Train Acc: 0.9910 | Val Loss: 2.9767 | Val Acc: 0.6939
+2026-05-27 13:27:40,264 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_31.pth
+2026-05-27 13:50:58,860 - INFO - Epoch: 32/50 | Train Loss: 0.0309 | Train Acc: 0.9916 | Val Loss: 3.0549 | Val Acc: 0.6846
+2026-05-27 13:50:59,699 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_32.pth
+2026-05-27 14:12:38,082 - INFO - Epoch: 33/50 | Train Loss: 0.0300 | Train Acc: 0.9920 | Val Loss: 3.0549 | Val Acc: 0.6911
+2026-05-27 14:12:38,906 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_33.pth
+2026-05-27 14:34:14,890 - INFO - Epoch: 34/50 | Train Loss: 0.0297 | Train Acc: 0.9921 | Val Loss: 2.9579 | Val Acc: 0.6942
+2026-05-27 14:34:15,656 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_34.pth
+2026-05-27 14:55:46,450 - INFO - Epoch: 35/50 | Train Loss: 0.0293 | Train Acc: 0.9921 | Val Loss: 3.0957 | Val Acc: 0.6927
+2026-05-27 14:55:47,224 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_35.pth
+2026-05-27 15:17:16,269 - INFO - Epoch: 36/50 | Train Loss: 0.0274 | Train Acc: 0.9925 | Val Loss: 3.0289 | Val Acc: 0.6857
+2026-05-27 15:17:17,086 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_36.pth
+2026-05-27 15:38:43,684 - INFO - Epoch: 37/50 | Train Loss: 0.0285 | Train Acc: 0.9923 | Val Loss: 3.0095 | Val Acc: 0.6952
+2026-05-27 15:38:44,532 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_37.pth
+2026-05-27 16:00:07,693 - INFO - Epoch: 38/50 | Train Loss: 0.0248 | Train Acc: 0.9932 | Val Loss: 3.0428 | Val Acc: 0.6918
+2026-05-27 16:00:08,502 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_38.pth
+2026-05-27 16:21:31,354 - INFO - Epoch: 39/50 | Train Loss: 0.0251 | Train Acc: 0.9933 | Val Loss: 3.0416 | Val Acc: 0.6883
+2026-05-27 16:21:32,114 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_39.pth
+2026-05-27 16:42:54,630 - INFO - Epoch: 40/50 | Train Loss: 0.0255 | Train Acc: 0.9929 | Val Loss: 3.1474 | Val Acc: 0.6941
+2026-05-27 16:42:55,495 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_40.pth
+2026-05-27 17:04:14,322 - INFO - Epoch: 41/50 | Train Loss: 0.0242 | Train Acc: 0.9933 | Val Loss: 3.0670 | Val Acc: 0.6913
+2026-05-27 17:04:15,059 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_41.pth
+2026-05-27 17:25:34,068 - INFO - Epoch: 42/50 | Train Loss: 0.0232 | Train Acc: 0.9936 | Val Loss: 3.0913 | Val Acc: 0.6907
+2026-05-27 17:25:34,858 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_42.pth
+2026-05-27 17:47:52,640 - INFO - Epoch: 43/50 | Train Loss: 0.0243 | Train Acc: 0.9934 | Val Loss: 3.0403 | Val Acc: 0.6882
+2026-05-27 17:47:53,549 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_43.pth
+2026-05-27 18:09:31,223 - INFO - Epoch: 44/50 | Train Loss: 0.0211 | Train Acc: 0.9943 | Val Loss: 3.0453 | Val Acc: 0.6907
+2026-05-27 18:09:32,012 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_44.pth
+2026-05-27 18:31:03,494 - INFO - Epoch: 45/50 | Train Loss: 0.0226 | Train Acc: 0.9938 | Val Loss: 3.0731 | Val Acc: 0.6940
+2026-05-27 18:31:04,299 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_45.pth
+2026-05-27 18:53:28,980 - INFO - Epoch: 46/50 | Train Loss: 0.0210 | Train Acc: 0.9944 | Val Loss: 3.0920 | Val Acc: 0.6947
+2026-05-27 18:53:29,905 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_46.pth
+2026-05-27 19:16:12,483 - INFO - Epoch: 47/50 | Train Loss: 0.0230 | Train Acc: 0.9937 | Val Loss: 3.1011 | Val Acc: 0.6887
+2026-05-27 19:16:13,623 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_47.pth
+2026-05-27 19:39:23,856 - INFO - Epoch: 48/50 | Train Loss: 0.0197 | Train Acc: 0.9947 | Val Loss: 3.0959 | Val Acc: 0.6952
+2026-05-27 19:39:24,874 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_48.pth
+2026-05-27 20:02:13,671 - INFO - Epoch: 49/50 | Train Loss: 0.0195 | Train Acc: 0.9948 | Val Loss: 3.1607 | Val Acc: 0.6905
+2026-05-27 20:02:14,542 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_49.pth
+2026-05-27 20:25:36,296 - INFO - Epoch: 50/50 | Train Loss: 0.0192 | Train Acc: 0.9946 | Val Loss: 3.1174 | Val Acc: 0.6888
+2026-05-27 20:25:37,109 - INFO - Modelo guardado exitosamente en: output/dtrocr_epoch_50.pth

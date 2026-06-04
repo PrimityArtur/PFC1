@@ -291,7 +291,14 @@ class DTrOCRLMHeadModel(nn.Module):
                 max_length=generation_config.max_length,
             )
 
-            result = self._beam_search(...)
+            result = self._beam_search(
+                input_ids,
+                beam_scorer,
+                logits_processor=LogitsProcessorList(),
+                stopping_criteria=prepared_stopping_criteria,
+                generation_config=generation_config,
+                **model_kwargs,
+            )
 
         elif num_beams == 1:
             # Ejecuta la generacion simple (Greedy). para que avance lo mas rapido posible eligiendo ciegamente la letra con mayor probabilidad en ese preciso instante
